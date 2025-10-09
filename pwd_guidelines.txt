@@ -1,0 +1,26 @@
+Typically, when users create passwords for logging into an online service, the following special characters are commonly allowed:
+
+1. Exclamation mark (!) <--- One of the most universally allowed special characters.
+2. At sign (@) <--- Another one of the most universally allowed special characters.
+3. Dollar sign ($)
+4. Percent sign (%)
+5. Hash (#)
+6. Ampersand (&)
+7. Asterisk (*)
+
+However, it's worth noting that some services may not allow all of these characters or may have specific restrictions on password length and complexity.
+
+In general, most online services follow the guidelines set by the National Institute of Standards and Technology (NIST) for strong passwords:
+
+* Minimum 8-12 characters in length
+* Combination of uppercase and lowercase letters
+* At least one number
+* At least one special character (such as those listed above)
+
+It's also common for services to have specific requirements, such as:
+
+* No spaces or special characters at the beginning or end of the password
+* No consecutive repeating characters (e.g., "aaa" or "111")
+* No easily guessable information (e.g., name, birthdate, common words)
+
+Keep in mind that different services may have varying password policies, so it's always a good idea to check with the specific service you're using for their exact requirements.
