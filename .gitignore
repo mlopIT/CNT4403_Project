@@ -1,0 +1,4 @@
+# Ignore the specific password generation output files
+
+output.txt
+output[0-100]*.txt
