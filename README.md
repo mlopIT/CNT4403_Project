@@ -18,7 +18,7 @@ It ensures that no existing output files are ever overwritten by automatically a
 
 ## Installation and Usage
 
-Note: You do not have to follow the steps below, if you want to use the python files in an IDE of your choice. The steps below apply if you want to use the Command Terminal in Windows.
+Note: You do not have to follow anything past the first step below, if you want to use this project's python files in an IDE of your choice. The steps below will apply if you want to use the Command Terminal in Windows.
 
 ### 1. Project Setup
 Clone the repository and navigate to the project folder:
