@@ -39,7 +39,7 @@ To create and activate a virtual environment in PowerShell:
 
 ```powershell
 python -m venv venv
-.env\Scripts\Activate
+.\venv\Scripts\Activate
 ```
 
 Once activated, you’ll notice your terminal prompt changes to show `(venv)` — meaning the environment is active.
