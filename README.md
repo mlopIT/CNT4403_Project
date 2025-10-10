@@ -3,9 +3,9 @@
 ## Overview
 The **`multi-pwgen-v5.py`** script is a utility that generates multiple passwords using a separate core password generation script (**`pwd_generator_v4.py`**) and safely stores all generated passwords in a single output file.
 
-Additionally, the **`pwd_generator_v4.py`** script creates the password that the **`multi-pwgen-v5.py`** script uses. More specifically, it generates a password with a length randomly anywhere between 8 and 12. It uses capital and lowercase letters, as well as digits and special characters. But the script only uses the Exclamation mark (!) and the At sign (@) characters because these are the universally allowed special characters when users create passwords for logging into an online service. And because most users only use 2 numbers and 2 special characters when creating passwords, the **`pwd_generator_v4.py`** script will only generate passwords with those amounts, but of course, you can always change and set the amount you prefer.
+Additionally, the **`pwd_generator_v4.py`** script generates a password with a length randomly anywhere between 8 and 12. It uses capital and lowercase letters, as well as digits and special characters. But the script only uses the Exclamation mark (!) and the At sign (@) characters because these are the universally allowed special characters when users create passwords for logging into an online service. And because most users only use 2 numbers and 2 special characters when creating passwords, the **`pwd_generator_v4.py`** script will only generate passwords with those amounts, but of course, you can always change and set the amount you prefer.
 
-It ensures that no existing output files are ever overwritten by automatically appending a number to the filename (e.g., `output1.txt`, `output2.txt`) if `output.txt` already exists in the same directory. The output file is always saved in the same folder as the script itself.
+The **`multi-pwgen-v5.py`** script ensures that no existing output files are ever overwritten by automatically appending a number to the filename (e.g., `output1.txt`, `output2.txt`) if `output.txt` already exists in the same directory. The output file is always saved in the same folder as the script itself.
 
 ---
 
