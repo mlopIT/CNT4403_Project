@@ -33,7 +33,7 @@ Add your password generator script:
 ---
 
 ### 2. (Optional but Recommended) Create and Activate a Virtual Environment
-A **virtual environment (venv)** isolates your project’s dependencies from the rest of your system. This prevents version conflicts between packages used in other projects and keeps your setup clean and reproducible. If you need additional help understanding how to setup your virtual environment click ([here.](https://youtu.be/yG9kmBQAtW4?si=dF8kaSLZFXCaIKBi))
+A **virtual environment (venv)** isolates your project’s dependencies from the rest of your system. This prevents version conflicts between packages used in other projects and keeps your setup clean and reproducible. If you need additional help understanding how to setup your virtual environment click [here](https://youtu.be/yG9kmBQAtW4?si=dF8kaSLZFXCaIKBi).
 
 To create and activate a virtual environment in PowerShell:
 
