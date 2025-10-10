@@ -12,7 +12,7 @@ The **`multi-pwgen-v5.py`** script ensures that no existing output files are eve
 ## Prerequisites
 - A separate password generator script named **`pwd_generator_v4.py`** must exist in the same directory as **`multi-pwgen-v5.py`**.  
 - The `pwd_generator_v4.py` script must print passwords using the standard `print()` function, as **`multi-pwgen-v5.py`** captures its output via stream redirection.  
-- No external dependencies are required — only Python’s standard library.
+- Some external dependencies are required besides Python’s standard library (like the **bcrypt** package).
 
 ---
 
@@ -32,7 +32,47 @@ Add your password generator script:
 
 ---
 
-### 2. Execution
+### 2. (Optional but Recommended) Create and Activate a Virtual Environment
+A **virtual environment (venv)** isolates your project’s dependencies from the rest of your system. This prevents version conflicts between packages used in other projects and keeps your setup clean and reproducible. If you need additional help understanding how to setup your virtual environment click ([here.](https://youtu.be/yG9kmBQAtW4?si=dF8kaSLZFXCaIKBi))
+
+To create and activate a virtual environment in PowerShell:
+
+```powershell
+python -m venv venv
+.env\Scripts\Activate
+```
+
+Once activated, you’ll notice your terminal prompt changes to show `(venv)` — meaning the environment is active.
+
+To deactivate the environment later, simply run:
+```powershell
+deactivate
+```
+
+---
+
+### 3. Install the bcrypt Package
+The **bcrypt** package is required if you plan to use the hashing utility that secures passwords before storage or comparison.
+
+To install it (while your virtual environment is active), run:
+```powershell
+(venv) pip install bcrypt
+```
+
+Expected output:
+```
+Collecting bcrypt
+  Using cached bcrypt-5.0.0-cp39-abi3-win_amd64.whl.metadata (10 kB)
+Using cached bcrypt-5.0.0-cp39-abi3-win_amd64.whl (150 kB)
+Installing collected packages: bcrypt
+Successfully installed bcrypt-5.0.0
+```
+
+Using bcrypt ensures your generated or stored passwords are cryptographically secure and protected against brute-force attacks.
+
+---
+
+### 4. Execution
 To quickly open the Command Prompt in Windows 10 or 11: 
 - Press the Windows key + R to open the Run dialog box, type cmd, and then press Enter.
 
@@ -57,7 +97,7 @@ Enter the number of passwords you would like to create: 5 <--- your input
 
 ---
 
-### 3. Output
+### 5. Output
 After generation completes, the script displays confirmation and the full path to the saved file:
 ```
 Successfully generated 5 passwords and saved the complete output.
@@ -78,15 +118,17 @@ If `output.txt` already exists, the program automatically saves to `output1.txt`
 |------|--------------|
 | `multi-pwgen-v5.py` | Main runner script. Handles input, runs the password generator multiple times, captures output, and saves results to a uniquely named file in the same directory. |
 | `pwd_generator_v4.py` | **(Required)** Core password generation logic provided by the user. Must output passwords using `print()`. |
-| `requirements.txt` | Lists required Python packages (only standard library modules are used). |
+| `requirements.txt` | Lists required Python packages (bcrypt should be added here if used). |
 
 ---
 
 ## Example Workflow
 1. Place both scripts in the same directory.  
-2. Run `multi-pwgen-v5.py`.  
-3. Enter how many passwords you need.  
-4. Find your results saved automatically in `output.txt` or a numbered variant.  
+2. Activate your virtual environment.  
+3. Install `bcrypt` if you plan to hash passwords.  
+4. Run `multi-pwgen-v5.py`.  
+5. Enter how many passwords you need.  
+6. Find your results saved automatically in `output.txt` or a numbered variant.  
 
 ---
 
